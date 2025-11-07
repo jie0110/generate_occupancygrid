@@ -15,21 +15,10 @@ from geometry_msgs.msg import Pose, PoseStamped
 from scipy.spatial import ConvexHull
 from skimage.draw import polygon
 
-class ClusterTracker:
-    def __init__(self):
-        self.clusters = []
-
-    def update(self,cluster):
-        pass
-
-    def get_clusters(self):
-        pass
-
 
 class PointCloudToOccupancyGrid:
     def __init__(self):
         rospy.init_node("occupancygrid_generator")
-        self.cluster_traker = ClusterTracker()
          # 点云预处理参数
         self.z_min = rospy.get_param('~z_min', 0.0)
         self.z_max = rospy.get_param('~z_max', 1.8)
