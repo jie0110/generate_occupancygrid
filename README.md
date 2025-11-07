@@ -14,3 +14,5 @@ occupancygrid_generator 是一个 ROS 节点，用于将输入的 3D 点云（�
     - /livox_occupancy_grid：nav_msgs/OccupancyGrid
     - /cluster_markers：visualization_msgs/MarkerArray（聚类边界框 + 文本标签）
     - /filtered_points：处理后的点云（调试用）
+## 运行效果
+https://www.bilibili.com/video/BV1e12TBZERB/?vd_source=130b183559ca6ba69351500e44adf5ea
